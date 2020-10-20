@@ -1,0 +1,6 @@
+0 Function Main
+1	Declare String txthello
+2
+3	Assign txthello = "hello world"
+4	output txthello
+5 End
