@@ -1,2 +1,0 @@
-0 txthello = "hello world"
-1 Print(txthello)
