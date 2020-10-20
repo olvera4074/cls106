@@ -1,0 +1,66 @@
+psuedo-code for making your favorite sandwich
+
+1.print ("bread-option")
+	'show display for bread'
+	1.wheat
+	2.rye
+	3.white
+	'enter num for fav bread'
+2. if 'bread-option' = 0 then
+	print('ERROR please enter num')
+endif
+3.print ("meat-option")
+	'show display for meat'
+	1.ham 
+	2.turkey
+	3.roast-beef
+	'enter num for fav meat'
+4. if 'meat-option' = 0 then
+	cancel meat-option
+else add meat-option to bread-option
+endif
+5.print ("cheese-option")
+	'show display for cheese'
+	1.pepper jack
+	2.american
+	3.provolone
+	'enter num for fav cheese'
+6. if 'cheese-option' = 0 then 
+	cancel cheese-option
+else add cheese-option to bread-option and meat-option
+endif
+7. print ("veggie-option")
+	'show display for veggies'
+		1.lettuce
+		2.tomato
+		3.pickles
+		4.onion
+		5.relish
+		6.sport-pep
+		7.mushrms
+		8.green-pep
+'enter num of veggies in sequential order to add to sandwhich'
+8. if veggie-option = 0 then
+	cancel veggie-option
+else add veggie-option to bread-option, meat-option and cheese-option
+endif 
+9.print ("cond-option")
+	'show display for condiments'
+		1.mayo
+		2.ketchup
+		3.mustard
+		4.oil/vin
+		5.salt
+		6.pepper
+		7.honey-must
+		8.celery-salt
+'enter num of condiments in sequential order to add to sandwhich'
+10. if cond-option = 0 then 
+	cancel cond-option
+else add cond-option to bread-option, meat-option, cheese-option and veggie-option
+endif
+'once all options are choosen enter "compress" to finish'
+11.print("Enjoy!")
+
+
+
