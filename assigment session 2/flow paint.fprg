@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 11:30:41 AM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTA6MTM6NDAgQU07Mjc4NQ=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTE6MzA6NDEgQU07NDsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="answer" type="Real" array="False" size=""/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="height" type="Real" array="False" size=""/>
+            <declare name="gallons" type="Integer" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <output expression="&quot;please enter the length&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;please enter the width&quot;" newline="True"/>
+            <input variable="width"/>
+            <output expression="&quot;please enter the height&quot;" newline="True"/>
+            <input variable="height"/>
+            <output expression="&quot;please enter how many gallons&quot;" newline="True"/>
+            <input variable="gallons"/>
+            <output expression="&quot;please enter the cost per gallon&quot;" newline="True"/>
+            <input variable="cost"/>
+            <assign variable="answer" expression="2 * length * height + 2 * width * height + 0.9999"/>
+            <assign variable="total" expression="cost * gallons"/>
+            <output expression="answer" newline="True"/>
+            <output expression="total" newline="True"/>
+            <output expression="&quot;you need = &quot; &amp; answer / total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

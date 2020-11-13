@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 11:43:38 AM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTA6MTM6NDAgQU07Mjc4NQ=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTE6NDM6MzggQU07NTsyOTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="years" type="Integer" array="False" size=""/>
+            <declare name="dog" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;please enter the dogs name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;please enter how the dogs age&quot;" newline="True"/>
+            <input variable="years"/>
+            <assign variable="dog" expression="7"/>
+            <assign variable="answer" expression="years * dog"/>
+            <output expression="name &amp; &quot; is &quot; &amp; answer &amp; &quot; dog years old&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

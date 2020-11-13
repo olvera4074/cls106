@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 11:14:00 AM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTA6MTM6NDAgQU07Mjc4NQ=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTE6MTQ6MDAgQU07MzsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="annual" type="Integer" array="False" size=""/>
+            <declare name="month" type="Integer" array="False" size=""/>
+            <declare name="week" type="Integer" array="False" size=""/>
+            <assign variable="annual" expression="52"/>
+            <assign variable="month" expression="12"/>
+            <output expression="&quot;please enter hourly rate&quot;" newline="True"/>
+            <input variable="rate"/>
+            <output expression="&quot;please enter how many hours&quot;" newline="True"/>
+            <input variable="hours"/>
+            <assign variable="answer" expression="rate * hours"/>
+            <output expression="&quot;weekly income &quot; &amp; answer" newline="True"/>
+            <output expression="&quot;your annual income &quot; &amp; answer * annual" newline="True"/>
+            <output expression="&quot;your monthly income &quot; &amp; answer * month" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

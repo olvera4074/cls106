@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 10:31:40 AM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTA6MTM6NDAgQU07Mjc4NQ=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTA6MzE6NDAgQU07MTsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="penny" type="Integer" array="False" size=""/>
+            <declare name="nickel" type="Integer" array="False" size=""/>
+            <declare name="dime" type="Integer" array="False" size=""/>
+            <declare name="quarter" type="Integer" array="False" size=""/>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter how many pennies&quot;" newline="True"/>
+            <input variable="penny"/>
+            <output expression="&quot;please enter how many nickels&quot;" newline="True"/>
+            <input variable="nickel"/>
+            <output expression="&quot;please enter how many dimes&quot;" newline="True"/>
+            <input variable="dime"/>
+            <output expression="&quot;please enter how many quarters&quot;" newline="True"/>
+            <input variable="quarter"/>
+            <assign variable="answer" expression="penny * 1 + nickel * 5 + dime * 10 + quarter * 25"/>
+            <output expression="&quot;you got in cents  &quot;&amp; answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
