@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 09:26:22 PM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MDk6MDU6MzQgUE07MjgxMg=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MDk6MjY6MjIgUE07MTsyOTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <declare name="width" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter length&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;please enter width&quot;" newline="True"/>
+            <input variable="width"/>
+            <assign variable="answer" expression="length * 2 + width * 2"/>
+            <output expression="&quot;your perimeter is &quot; &amp; answer" newline="True"/>
+            <call expression="area(length, width)"/>
+        </body>
+    </function>
+    <function name="area" type="None" variable="">
+        <parameters>
+            <parameter name="length" type="Integer" array="False"/>
+            <parameter name="width" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="answer2" type="Integer" array="False" size=""/>
+            <assign variable="answer2" expression="length * width"/>
+            <output expression="&quot;your area is &quot; &amp; answer2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

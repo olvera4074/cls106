@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="olver"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-13 11:33:46 PM"/>
+        <attribute name="created" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MDk6NDU6NDYgUE07MjgxOQ=="/>
+        <attribute name="edited" value="b2x2ZXI7REVTS1RPUC0wOTgyNlA5OzIwMjAtMTEtMTM7MTE6MzM6NDYgUE07MTsyOTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="apples" type="Integer" array="False" size=""/>
+            <declare name="chips" type="Integer" array="False" size=""/>
+            <declare name="candy" type="Integer" array="False" size=""/>
+            <output expression="&quot;apples = $2&#13;&#10;chips = $4&#13;&#10;candy bars = $6&quot;" newline="True"/>
+            <output expression="&quot;please enter how many apples&quot;" newline="True"/>
+            <input variable="apples"/>
+            <output expression="&quot;please enter how many bags of chips&quot;" newline="True"/>
+            <input variable="chips"/>
+            <output expression="&quot;please enter how many candy bars&quot;" newline="True"/>
+            <input variable="candy"/>
+            <assign variable="answer" expression="apples * 2 + chips * 4 + candy * 6"/>
+            <output expression="&quot;your total is &quot; &amp; answer &amp; &quot; witout taxes&quot;" newline="True"/>
+            <call expression="tax(answer)"/>
+        </body>
+    </function>
+    <function name="tax" type="None" variable="">
+        <parameters>
+            <parameter name="answer" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="acttotal" type="Real" array="False" size=""/>
+            <declare name="taxes" type="Real" array="False" size=""/>
+            <assign variable="taxes" expression="answer * .07"/>
+            <assign variable="acttotal" expression="taxes + answer"/>
+            <output expression="&quot;taxes paid = &quot; &amp; taxes" newline="True"/>
+            <output expression="&quot;your total with taxes is &quot; &amp; acttotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
